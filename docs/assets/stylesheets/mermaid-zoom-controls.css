@@ -1,0 +1,35 @@
+g.zoom-controls {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+g.zoom-controls rect {
+  fill: none;
+}
+g.zoom-controls line {
+  stroke: #596877;
+  stroke-width: 2;
+}
+
+g.zoom-controls g:hover>text {
+  fill-opacity: 0.8;
+  fill: var(--md-accent-fg-color);
+}
+
+g.zoom-controls text {
+  font-size: 20px;
+  font-weight: bold;
+  fill: var(--md-primary-fg-color--light);
+  fill-opacity: 0.2;
+}
+
+g.ctrl-scroll-hint-overlay rect {
+  fill: black;
+  fill-opacity: 0.3;
+}
+
+g.ctrl-scroll-hint-overlay text {
+  font-size: 22px;
+  fill: white;
+  fill-opacity: 1;
+}

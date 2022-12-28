@@ -1,0 +1,31 @@
+site_name: Zoom/pan for Mermaid diagrams
+theme:
+  name: material
+  features:
+    - navigation.top
+    - navigation.expand
+
+plugins:
+  - awesome-pages
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+extra_css:
+  - assets/stylesheets/mermaid-zoom-controls.css
+  - assets/fontawesome/css/solid.css
+  - assets/fontawesome/css/fontawesome.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/d3@7
+  - assets/javascripts/mermaid-zoom-controls-main.js
